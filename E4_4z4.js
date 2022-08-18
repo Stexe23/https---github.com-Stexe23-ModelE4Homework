@@ -27,3 +27,9 @@
 а экземпляр конкретную реализацию);
 использование синтаксиса ES6 (кроме функции-конструкторов) и т. д.*/
 
+function Device(power, getOnOff) {
+    this.power = power,
+    thes.getOnOff = funtion(sost) {
+      let sost = prompt('Введите знацение 1(вкл) или 0(вкл)')
+    }
+}
