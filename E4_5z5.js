@@ -5,13 +5,14 @@
 Имена классов, свойств и методов должны быть информативными;
 Соблюдать best practices;
 Использовать синтаксис ES6.*/
-function Device(power, getOnOff) {
+class Device {
+  constructor(power, getOnOff) {
     this.power = power;
-    this.getOnOff = [0, 1];
+    this.getOnOff = getOnOff;
     this.nameDevice = '';
-    }
-    
-  const comp = new Device(400,  1) 
+  }
+}  
+  const comp = new Device(400,  1)
   
   const lamp = new Device(80,  1)
   

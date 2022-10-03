@@ -55,16 +55,16 @@ const pow2 = () => {
   }
 sumPower = pow1 + pow2;
 console.log(pow1, pow2);
-console.log('общая потребляемая мошьность: ${sumPower}Вт');
+console.log('Общая потребляемая мошьность: ${sumPower}Вт');
 
   function SortDevice() {
     if (comp.power > lamp.power) {
       console.log(
-        "List of consumers by reduction: 1. ${comp.nameDevice} 2. ${lamp.nameDevice}"
+        "Список потребителей по сокращению: 1. ${comp.nameDevice} 2. ${lamp.nameDevice}"
       );
     } else {
       console.log(
-        "List of consumers by reduction: 1. ${lamp.nameDevice} 2. ${comp.nameDevice}"
+        "Список потребителей по сокращению: 1. ${lamp.nameDevice} 2. ${comp.nameDevice}"
       );
     }
   }
