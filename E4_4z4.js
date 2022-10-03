@@ -28,8 +28,44 @@
 использование синтаксиса ES6 (кроме функции-конструкторов) и т. д.*/
 
 function Device(power, getOnOff) {
-    this.power = power,
-    thes.getOnOff = funtion(sost) {
-      let sost = prompt('Введите знацение 1(вкл) или 0(вкл)')
-    }
+  this.power = power;
+  this.getOnOff = [0, 1];
+  this.nameDevice = "";
 }
+
+const comp = new Device(400, 1);
+
+const lamp = new Device(80, 1);
+
+comp.nameDevice = "Computer";
+lamp.nameDevice = "Lamp";
+
+const pow1 = () => {
+  if (comp.getOnOff !== 0) {
+    comp.power;
+  } else {
+    0;
+  }
+};
+const pow2 = () => {
+  if (lamp.getOnOff != 0) {
+    lamp.power;
+  } else {
+    0;
+  }
+sumPower = pow1 + pow2;
+console.log(pow1, pow2);
+console.log('общая потребляемая мошьность: ${sumPower}Вт');
+
+  function SortDevice() {
+    if (comp.power > lamp.power) {
+      console.log(
+        "List of consumers by reduction: 1. ${comp.nameDevice} 2. ${lamp.nameDevice}"
+      );
+    } else {
+      console.log(
+        "List of consumers by reduction: 1. ${lamp.nameDevice} 2. ${comp.nameDevice}"
+      );
+    }
+  }
+};
